@@ -1,0 +1,13 @@
+<h1><center> Viewing Party </center></h1>
+
+<center><%= button_to "Create New User", new_user_path, method: :get %></center>
+
+<br>
+<br>
+
+<h3><center> Existing Users: </center></h3>
+<div id="users"><center>
+  <% @users.each do |user| %>
+    <p><%= link_to user.name, user_path(user) %></p>
+  <% end %>
+</center></div>
