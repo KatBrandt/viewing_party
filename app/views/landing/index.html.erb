@@ -7,9 +7,7 @@
 
 <h3><center> Existing Users: </center></h3>
 <div id="users"><center>
-  <ul list-style="none">
-    <% @users.each do |user| %>
-      <li><%= link_to user.name, user_path(user) %></li>
-    <% end %>
-  </ul>
+  <% @users.each do |user| %>
+    <p><%= link_to user.name, user_path(user) %></p>
+  <% end %>
 </center></div>

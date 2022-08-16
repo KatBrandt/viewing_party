@@ -36,4 +36,11 @@ describe "Landing Page" do
       expect(current_path).to eq user_path(@user1)
     end
   end
+
+  it 'displays link to landing page on all pages' do
+    expect(page).to have_link "Home"
+
+    visit user_path(@user1)
+    expect(page).to have_link "Home"
+  end
 end
