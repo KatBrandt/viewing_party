@@ -254,6 +254,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.6)
   rspec-rails
+  rubocop (~> 1.35)
   rubocop-rails
   sass-rails (~> 5.0)
   shoulda-matchers
