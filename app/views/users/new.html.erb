@@ -1,0 +1,11 @@
+<h1><center>Register New User</center></h1>
+
+<%= form_with model: @user, url: users_path do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Enter Name" %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email, placeholder: "Enter Email" %>
+
+  <%= f.submit "Register" %>
+<% end %>

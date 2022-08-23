@@ -17,7 +17,7 @@ describe "Landing Page" do
   it 'can click button to create new user' do
     click_on "Create New User"
 
-    expect(current_path).to eq new_user_path
+    expect(current_path).to eq register_path
   end
 
   it 'displays list of existing users' do
